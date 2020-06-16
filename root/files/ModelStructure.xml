@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ModelStructure MsgType="S_CLIENT" PortValue="IO_Type">
+  <NModel Name="test4.xml">
+    <Component Class="C_Transducer" Name="a" Type="Atomic" height="150" width="250" x="375" y="146">
+      <Attribute Access="Public" Name="MaxCustomers" Type="int" Value="100"/>
+      <Port>
+        <In Name="pin_procin" height="30" width="30" x="225" y="176"/>
+        <Out Name="pout_stop" height="30" width="30" x="775" y="176"/>
+      </Port>
+    </Component>
+    <Component Class="C_Processor" Name="aa" Type="Atomic" height="150" width="250" x="382" y="635">
+      <Attribute Access="Private" Name="ID" Type="int" Value="0"/>
+      <Attribute Access="Public" Name="ProcType" Type="int" Value="0"/>
+      <Port>
+        <In Name="pin_bufin" height="30" width="30" x="232" y="665"/>
+        <Out Name="pout_transout" height="30" width="30" x="782" y="665"/>
+        <Out Name="pout_done" height="30" width="30" x="782" y="695"/>
+        <Out Name="pout_init" height="30" width="30" x="782" y="755"/>
+      </Port>
+    </Component>
+  </NModel>
+</ModelStructure>
